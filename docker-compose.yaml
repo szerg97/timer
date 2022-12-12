@@ -1,0 +1,16 @@
+version: '3.8'
+
+networks:
+  timer:
+    name: 'timer'
+
+services:
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - '27017:27017'
+
+    networks:
+      - 'timer'
