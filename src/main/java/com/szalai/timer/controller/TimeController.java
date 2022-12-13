@@ -3,6 +3,7 @@ package com.szalai.timer.controller;
 import com.szalai.timer.model.Time;
 import com.szalai.timer.repository.TimeRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,7 +15,6 @@ import java.util.List;
 @RequestMapping("/timer")
 @AllArgsConstructor
 public class TimeController {
-
     private final TimeRepository repository;
 
     @GetMapping(path = "")

@@ -17,3 +17,4 @@ management:
       show-details: always
 logging:
   config: ${LOGGING_CONFIG:classpath:logback.xml}
+  logcontrol: ${LOG_CTR_FILE:/logcontrol/logcontrol.json}
