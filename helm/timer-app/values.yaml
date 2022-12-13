@@ -2,3 +2,11 @@ deployment:
   image: "szalaigeri/timer"
   tag: "3.0.0"
 name: "timer-app"
+mongo:
+  url: mongodb://mongo:27017/dev
+logging:
+  control:
+    path: /logcontrol
+    file: /logcontrol/logcontrol.json
+    configmap:
+      name: logcontrol-configmap

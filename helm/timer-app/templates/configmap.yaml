@@ -11,3 +11,6 @@ data:
         "severity": "info"
       }
     ]
+
+  application.properties: |
+    log.control.config.path = {{ include "timer.logControlConfigPath" . }}
